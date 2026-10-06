@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="hr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Kontakt</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kontakt</h1>
+        <p>Slobodno mi se javite</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="materijali.html">Materijali</a>
+        <a href="o-meni.html">O meni</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <main>
+
+        <section class="kontakt">
+
+            <!-- LIJEVA STRANA -->
+            <div class="kontakt-podaci">
+
+                <span class="kontakt-oznaka">KONTAKT</span>
+
+                <h2>Javite mi se</h2>
+
+                <p class="kontakt-opis">
+                    Imate pitanje, prijedlog ili trebate dodatne
+                    informacije? Slobodno mi se javite.
+                </p>
+
+                <div class="kontakt-stavka">
+                    <div class="kontakt-ikona">👨‍🏫</div>
+                    <div>
+                        <strong>Ime i prezime</strong>
+                        <p>Marko Markulija</p>
+                    </div>
+                </div>
+
+                <div class="kontakt-stavka">
+                    <div class="kontakt-ikona">🏫</div>
+                    <div>
+                        <strong>Radno mjesto</strong>
+                        <p>Tehnička škola Čakovec</p>
+                    </div>
+                </div>
+
+                <div class="kontakt-stavka">
+                    <div class="kontakt-ikona">📧</div>
+                    <div>
+                        <strong>E-mail</strong>
+                        <p>Ovdje upišite svoju e-mail adresu</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- DESNA STRANA - FORMA -->
+            <div class="kontakt-forma">
+
+                <h2>Pošaljite poruku</h2>
+
+                <form>
+
+                    <label for="ime">Ime i prezime</label>
+                    <input
+                        type="text"
+                        id="ime"
+                        name="ime"
+                        placeholder="Vaše ime i prezime"
+                        required
+                    >
+
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="vas@email.com"
+                        required
+                    >
+
+                    <label for="naslov">Naslov poruke</label>
+                    <input
+                        type="text"
+                        id="naslov"
+                        name="naslov"
+                        placeholder="Naslov poruke"
+                        required
+                    >
+
+                    <label for="poruka">Poruka</label>
+                    <textarea
+                        id="poruka"
+                        name="poruka"
+                        rows="6"
+                        placeholder="Upišite svoju poruku..."
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        📤 Pošalji poruku
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Moji materijali
+    </footer>
+
+</body>
+
+</html>
