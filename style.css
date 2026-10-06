@@ -1,3 +1,7 @@
+/* =========================
+   OSNOVNI STILOVI
+   ========================= */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,12 +9,30 @@ body {
     color: #333;
 }
 
+
+/* =========================
+   ZAGLAVLJE
+   ========================= */
+
 header {
     background-color: #2563eb;
     color: white;
     padding: 25px;
     text-align: center;
 }
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+header p {
+    margin: 0;
+}
+
+
+/* =========================
+   NAVIGACIJA
+   ========================= */
 
 nav {
     background-color: #1e40af;
@@ -29,31 +51,38 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
+/* =========================
+   GLAVNI SADRŽAJ
+   ========================= */
+
 main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px auto;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 h2 {
     color: #2563eb;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #666;
-}
+
+/* =========================
+   KARTICE
+   ========================= */
 
 .materijali {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: stretch;
+    margin-bottom: 40px;
 }
-
 
 .kartica {
     background-color: #ffffff;
@@ -61,16 +90,33 @@ footer {
     padding: 25px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.ikona {
-    font-size: 45px;
+    box-sizing: border-box;
 }
 
 .kartica h3 {
     color: #2563eb;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
+
+.kartica p {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   IKONA
+   ========================= */
+
+.ikona {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   GUMBI
+   ========================= */
 
 .gumb {
     display: block;
@@ -80,11 +126,17 @@ footer {
     padding: 10px;
     margin-top: 10px;
     border-radius: 6px;
+    font-weight: bold;
 }
 
 .gumb:hover {
     background-color: #1e40af;
 }
+
+
+/* =========================
+   GUMB ZA PREUZIMANJE
+   ========================= */
 
 .gumb.preuzmi {
     background-color: #16a34a;
@@ -93,48 +145,11 @@ footer {
 .gumb.preuzmi:hover {
     background-color: #15803d;
 }
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
-}
 
-header {
-    background-color: #2563eb;
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
 
-nav {
-    background-color: #1e40af;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-h2 {
-    color: #2563eb;
-}
+/* =========================
+   PODNOŽJE
+   ========================= */
 
 footer {
     text-align: center;
@@ -142,48 +157,55 @@ footer {
     color: #666;
 }
 
-.materijali {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    main {
+        margin: 30px 20px;
+    }
+
+    .materijali {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
-.kartica {
-    width: 250px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
 
-.ikona {
-    font-size: 45px;
-}
+/* =========================
+   MOBITEL
+   ========================= */
 
-.kartica h3 {
-    color: #2563eb;
-    margin-bottom: 10px;
-}
+@media (max-width: 600px) {
 
-.gumb {
-    display: block;
-    background-color: #2563eb;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 6px;
-}
+    header {
+        padding: 20px;
+    }
 
-.gumb:hover {
-    background-color: #1e40af;
-}
+    nav {
+        padding: 12px;
+    }
 
-.gumb.preuzmi {
-    background-color: #16a34a;
-}
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
 
-.gumb.preuzmi:hover {
-    background-color: #15803d;
+    main {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .materijali {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .kartica {
+        padding: 20px;
+    }
+
 }
